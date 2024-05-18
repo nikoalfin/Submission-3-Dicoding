@@ -1,0 +1,425 @@
+img {
+  display: block;
+}
+
+html, body, main{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px 20px;
+  border-bottom: 2px solid #fff;
+}
+
+
+.navbar-brand {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+
+.navbar-menu-item {
+  position: relative;
+}
+
+.skip-to-content {
+  width: 120px;
+  height: 46px;
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px 10px;
+  font-style: italic;
+  z-index: 100;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+
+.navbar-menu-item a {
+  color: #fff;
+  width: 44px;
+  height: 50px;
+  padding: 20px 0px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+
+.navbar-menu-item:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+a {
+  width: 44px;
+  height: 44px;
+}
+
+
+.navbar-menu-item:hover a {
+  color: #ff9900;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+}
+
+.bar {
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  margin: 4px 0;
+  margin-left: 120px;
+}
+
+
+
+.hero-image{
+  width: auto;
+  background-size: cover;
+  margin: 3rem auto 2rem ;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 5rem;
+  background-color: rgb(0, 0, 0);
+}
+
+.hero-image img {
+  width: 100%;
+  border-bottom-right-radius: 99px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.hero-image h2 {
+  padding-top: 50vh;
+  color: white;
+  padding-left: 2rem;
+  font-size: 2rem;
+  font-weight: 900;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+@media (max-width: 768px) {
+  .navbar{
+    width: 90%;
+  }
+
+  .hero-image{
+    width: 100%;
+    background-size: cover;
+    margin: 3rem auto 2rem ;
+    background-color: black;
+    display: block;
+    margin-top: -1px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 99px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .hero-image h2 {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    color: white;
+    padding-left: 2rem;
+    font-size: 2rem;
+    font-weight: 900;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+}
+
+.explore {
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #333;
+}
+
+
+.restaurant-container {
+  background-color: #333;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) ;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 10px;
+  border: 2px solid white;
+}
+
+
+.items-1{
+  /* text-align: center; */
+  margin: auto;
+  /* background-color: #bf1722; */
+  width: 80%;
+}
+
+.restaurant-detail__pagination{
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.restaurant-detail__header__poster{
+  width: 600px;
+  height: 400px;
+}
+
+.name_restorant{
+  margin-top: -40px;
+}
+
+.items-2{
+  width: 110%;
+  margin-left: -100px;
+}
+
+.detail{
+  padding: 16px 16px;
+  background-color: #4CAF50;
+}
+
+.restaurant {
+  border: 2px solid #ccc;
+  padding: 30px;
+}
+
+.restaurant img {
+  max-width: 100%;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* PAGE DETAIL */
+.page_detail{
+  width: 100%;
+  height: auto;
+  padding: 10px 12px;
+  background-color: #676666;
+  display: flex;
+  color: #fff;
+  gap: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image_detail{
+  width: 50px;
+  height: 10px;
+}
+
+.page1{
+  width: 40%;
+  height: 600px;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00B4CC;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.page2{
+  width: 60%;
+  font-size: 15px;
+}
+
+#favButton{
+  width: 90px;
+  height: 45px;
+}
+
+/* page favorit */
+.restaurant-item__footer{
+  width: 90px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff9900;
+}
+
+/* form */
+.reviews-form-input{
+  height: 40px;
+}
+
+.reviews-form-submit{
+  height: 45px;
+}
+
+/* fa home */
+.restaurant-detail__pagination__back{
+  width: 50px;
+  height: 50px; 
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+      z-index: 1;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background-color: #333;
+      width: 85%;
+      margin: auto;
+      padding: 20px;
+  }
+
+  .navbar-menu.active {
+      display: flex;
+  }
+
+  .hamburger {
+      display: flex;
+      border: none;
+      background: none;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      margin-left: -120px;
+  }
+  .page_detail{
+    display: block;
+    padding: 0px;
+  }
+  .image_detail{
+    width: 100%;
+    height: 200px;
+    margin: auto;
+  }
+
+  .page1{
+    width: 100%;
+    height: 550px;
+    margin: auto;
+  }
+
+  .page2{
+    width: 95%;
+    margin: auto;
+    padding: 20px 5px;
+  }
+
+/* page detail */
+  .restaurant-container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin: auto;
+    padding: 0px 0px;
+  }
+
+  .restaurant-detail__header__poster{
+    width: 900px;
+    height: 300px;
+  }
+  .items-1{
+    width: 95%;
+  }
+  .items-2{
+    width: 98%;
+    margin-left: 0px;
+  }
+
+  /* page detail */
+  .restaurant-item__header{
+    width: 80%;
+    margin: auto;
+  }
+
+  .restaurant-item__content{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+
